@@ -26,6 +26,11 @@
 
 // Methods
 
+-(instancetype)init_with_name: (NSString *)p_name;
+-(instancetype)init_with_name:(NSString *)p_name
+               and_moon_count:(int)m_count
+              and_rebel_bases:(int)rebel_bases;
+
 -(void) set_name: (NSString *) p_name
   and_moon_count: (int) m_count;
 
@@ -54,6 +59,20 @@
 @implementation planet
 
 @synthesize name, moonCount, alienRaceCount, wantsToKillEarthlings, midiChlorianLevel, rebelBaseCount;
+
+-(instancetype)init_with_name:(NSString *)p_name{
+    self = [super init];
+    name = p_name;
+    return self;
+}
+
+-(instancetype)init_with_name:(NSString *)p_name
+               and_moon_count:(int)m_count
+              and_rebel_bases:(int)rebel_bases{
+    self = [super init];
+    name = p_name;
+    return self;
+}
 
 -(void) set_name:(NSString *)p_name and_moon_count:(int)m_count{
     name = p_name;
@@ -151,6 +170,9 @@ int main(int argc, const char * argv[]) {
         planet *alderaan = [[planet alloc] init];
         [alderaan set_name:@"Alderaan" and_moon_count:16 and_alien_races:5 and_rebel_bases:1];
         [alderaan print_info];
+        
+        planet *naboo = [[planet alloc] init_with_name:@"Naboo" and_moon_count:80 and_rebel_bases:56];
+        [naboo print_info];
         
         NSLog(@"Jupiter's description: %@", [alderaan description]);
         
