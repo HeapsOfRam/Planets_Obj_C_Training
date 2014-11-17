@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "planet.h"
+#import "mechanical_planet.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -48,10 +49,13 @@ int main(int argc, const char * argv[]) {
         planet *naboo = [[planet alloc] init_with_name:@"Naboo" and_moon_count:80 and_rebel_bases:56];
         [naboo print_info];
         
-        
         NSLog(@"Alderaan description: %@", [alderaan description]);
         
         NSLog(@"Combined number of moons = %i", [jupiter moonCount] + [tatooine moonCount] + [tuchanka moonCount] + [alderaan moonCount]);
+        
+        mechanical_planet *death_star = [[mechanical_planet alloc] init_with_name:@"Death Star" and_tractor_beam_type:@"Empire" and_light_speed_mag:4.333];
+        [death_star setWantsToKillEarthlings:YES];
+        [death_star print_info];
         
     }
     return 0;

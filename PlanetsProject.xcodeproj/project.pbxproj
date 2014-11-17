@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2134A4911A1A42B7002B5819 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2134A4901A1A42B7002B5819 /* main.m */; };
 		2134A4991A1A5C9C002B5819 /* planet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2134A4981A1A5C9C002B5819 /* planet.m */; };
+		2134A49F1A1A5DF7002B5819 /* mechanical_planet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2134A49E1A1A5DF7002B5819 /* mechanical_planet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		2134A4901A1A42B7002B5819 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2134A4971A1A5C9C002B5819 /* planet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = planet.h; sourceTree = "<group>"; };
 		2134A4981A1A5C9C002B5819 /* planet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = planet.m; sourceTree = "<group>"; };
+		2134A49D1A1A5DF7002B5819 /* mechanical_planet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mechanical_planet.h; sourceTree = "<group>"; };
+		2134A49E1A1A5DF7002B5819 /* mechanical_planet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mechanical_planet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 		2134A48F1A1A42B7002B5819 /* PlanetsProject */ = {
 			isa = PBXGroup;
 			children = (
+				2134A49D1A1A5DF7002B5819 /* mechanical_planet.h */,
+				2134A49E1A1A5DF7002B5819 /* mechanical_planet.m */,
 				2134A4971A1A5C9C002B5819 /* planet.h */,
 				2134A4981A1A5C9C002B5819 /* planet.m */,
 				2134A4901A1A42B7002B5819 /* main.m */,
@@ -125,6 +130,7 @@
 			files = (
 				2134A4911A1A42B7002B5819 /* main.m in Sources */,
 				2134A4991A1A5C9C002B5819 /* planet.m in Sources */,
+				2134A49F1A1A5DF7002B5819 /* mechanical_planet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
