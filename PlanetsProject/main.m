@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "planet.h"
 #import "mechanical_planet.h"
+#import "atlantian_warrior.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -56,6 +57,10 @@ int main(int argc, const char * argv[]) {
         mechanical_planet *death_star = [[mechanical_planet alloc] init_with_name:@"Death Star" and_tractor_beam_type:@"Empire" and_light_speed_mag:4.333];
         [death_star setWantsToKillEarthlings:YES];
         [death_star print_info];
+        
+        atlantian_warrior *aquaman = [[atlantian_warrior alloc] init_with_name:@"Aquaman" and_weapon_wielded:@"Fish" and_royal_guard:YES and_battles_won:1021];
+        
+        NSLog(@"%@", [aquaman retrieve_data]);
         
     }
     return 0;
